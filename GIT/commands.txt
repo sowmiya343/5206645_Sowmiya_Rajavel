@@ -1,0 +1,57 @@
+git diff
+git commit -a -m "Tested git commit -a -m"
+git status
+git add git_commands_test.txtgit diff
+git commit -a -m "Tested git commit -a -m"
+git status
+git add git_commands_test.txt
+git checkout -b test-branch
+git checkout main
+git commit --amend
+git push origin test-branch
+git pull
+git rebase -i HEAD~2
+git clone <repo_url>
+git merge test-branch
+git log --stat
+git stash
+git stash pop
+git show <commit_id>
+git reset HEAD~1
+git format-patch -1 HEAD
+git apply 0001*.patch
+git branch -D test-branch
+git reset
+git revert <commit_id>
+git cherry-pick <commit_id>
+git branch
+git reset --hard HEAD~1
+git add .
+git commit -m "Your commit message"
+git rebase --abort
+git rebase --continue
+git rebase --skip
+
+git checkout -b test-branch
+git checkout main
+git commit --amend
+git push origin test-branch
+git pull
+git rebase -i HEAD~2
+git clone <repo_url>
+git merge test-branch
+git log --stat
+git stash
+git stash pop
+git show <commit_id>
+git reset HEAD~1
+git branch -D test-branch
+git reset
+git revert <commit_id>
+git branch
+git reset --hard HEAD~1
+git add .
+git commit -m "Your commit message"
+git rebase --abort
+git rebase --continue
+git rebase --skip
