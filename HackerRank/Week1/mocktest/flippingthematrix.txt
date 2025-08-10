@@ -1,0 +1,26 @@
+#include <stdio.h>
+int max(int a,int b){return a>b?a:b;}
+
+int main(){
+    int q;
+    scanf("%d",&q);
+    while(q--){
+        int n;
+        scanf("%d",&n);
+        int s=n*2;
+        int arr[s][s];
+        for(int i=0;i<s;i++){
+            for(int j=0;j<s;j++){
+                scanf("%d",&arr[i][j]);
+            }
+        }
+        int sum=0;
+        for(int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                int maxx=max(max(arr[i][j],arr[i][s-1-j]),max(arr[s-1-i][j],arr[s-1-i][s-1-j]));
+                sum+=maxx;
+            }
+        }
+        printf("%d\n",sum);
+    }
+}
